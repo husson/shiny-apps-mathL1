@@ -10,7 +10,7 @@
 
 # Récupération depuis PLMShift, via cle SSH, si votre dépôt est privé
 
-Si votre dépôt Shiny Custom est privé, PLMShift devra posséder un secret (ici une clé SSH) afind'accéder à votre dépôt
+Si votre dépôt Shiny Custom est privé, PLMShift devra posséder un secret (ici une clé SSH) afin d'accéder à votre dépôt
 
 cf: https://docs.openshift.com/container-platform/3.11/dev_guide/builds/build_inputs.html#source-clone-secrets
 
@@ -19,7 +19,7 @@ cf: https://docs.openshift.com/container-platform/3.11/dev_guide/builds/build_in
 ssh-keygen -C "openshift-source-builder/shiny@plmlab" -f shiny-at-plmlab -N ''
 ```
 - Ajout de la clé publique dans les préférences du dépôt mon_depot/shiny-custom (Settings->Repository->Deploy Keys)
-- Ajout de la clé privé dans openshift
+- Ajout de la clé privé dans PLMShift
 ```
 oc project mon_projet
 oc create secret generic shiny-at-plmlab --from-file=ssh-privatekey=shiny-at-plmlab --type=kubernetes.io/ssh-auth
