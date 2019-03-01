@@ -23,6 +23,7 @@ ssh-keygen -C "openshift-source-builder/shiny@plmlab" -f shiny-at-plmlab -N ''
 ```
 oc project mon_projet
 oc create secret generic shiny-at-plmlab --from-file=ssh-privatekey=shiny-at-plmlab --type=kubernetes.io/ssh-auth
+oc set build-secret --source bc/shiny-img shiny-at-plmlab
 oc annotate secret/shiny-at-plmlab 'build.openshift.io/source-secret-match-uri-1=git@plmlab.math.cnrs.fr:mon_depot/shiny-custom.git'
 ```
 
