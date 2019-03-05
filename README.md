@@ -35,7 +35,7 @@ La dernière commande ```oc start-build bc/shiny-img``` permet de relancer la fa
 
 ## Via la console Web
 
-- Allez sur https://plmshift.math.cnrs.fr, [sélectionnez votre projet](https://plmshift.math.cnrs.fr/console/projects)
+- Allez sur la console de PLMShift, [sélectionnez votre projet](https://plmshift.math.cnrs.fr/console/projects)
 - Onglet Resources->Secrets->Create Secret
   - Pour la rubrique 'Authentication Type' sélectionnez 'SSH Key'
   - Copiez/collez ou téléchargez votre clé privée SSH
