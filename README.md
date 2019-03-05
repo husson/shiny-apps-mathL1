@@ -41,3 +41,4 @@ La dernière commande ```oc start-build bc/shiny-img``` permet de relancer la fa
   - Copiez/collez ou téléchargez votre clé privée SSH
   - Pour la rubrique 'Service Account', sélectionnez 'builder'
 
+![Ajout clé SSH](img/secret-ssh-key.png)
