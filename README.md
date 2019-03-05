@@ -11,6 +11,21 @@
   - dans le cas d'un dépôt privé, vous devez utiliser une "clé SSH de déploiement" (voir ci-dessous) 
 - Patientez et ensuite connectez-vous sur l'URL de votre déploiement
 
+# Cycle de vie de votre application
+
+## En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest)
+
+- oc project mon_projet
+- oc start-build bc/shiny-img
+
+## Via la console Web
+
+- Editez les fichiers dans le dossier ShinyApps de votre dépôt shiny-custom, mettez à jour (git push) le dépôt git
+- Relancez la fabrication de votre image : 
+  - Allez sur la console de PLMShift, [sélectionnez votre projet](https://plmshift.math.cnrs.fr/console/projects)
+  - Onglet Builds->Builds, cliquez sur **shiny-img**
+  - Cliquez sur **Start Build**
+
 # Récupération depuis PLMShift de votre dépôt privé, via une clé SSH de déploiement
 
 Si votre dépôt Shiny Custom est privé, PLMShift devra posséder un secret (ici une clé SSH) afin d'accéder à votre dépôt
