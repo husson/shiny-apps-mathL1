@@ -18,8 +18,10 @@
 
 ### En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest))
 
-- oc project mon_projet
-- oc start-build bc/shiny-img
+```
+oc project mon_projet
+oc start-build bc/shiny-img
+```
 
 ### Via la console Web
 
