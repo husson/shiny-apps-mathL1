@@ -7,7 +7,7 @@
 - Connectez-vous sur https://plmshift.math.cnrs.fr, créez une applications Shiny R depuis le catalogue
 - Renseignez l'URL de votre dépôt shiny-custom
   - si votre dépôt est public, l'URL sera de la forme : https://plmlab.math.cnrs.fr/votre_groupe/shiny-custom.git
-  - si vous souhaitez un dépôt privé, l'URL sera de la forme : git@plmlab.math.cnrs.fr/votre_groupe/shiny-custom.git
+  - si vous souhaitez un dépôt privé, l'URL sera de la forme : git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git
   - dans le cas d'un dépôt privé, vous devez utiliser une "clé SSH de déploiement" (voir ci-dessous) 
 - Patientez et ensuite connectez-vous sur l'URL de votre déploiement
 
