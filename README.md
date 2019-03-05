@@ -14,14 +14,14 @@
 # Cycle de vie de votre application
 
 - Editez les fichiers dans le dossier ShinyApps de votre dépôt shiny-custom, mettez à jour (git push) le dépôt git
-- Relancez la fabrication de votre image...
+- Relancez la fabrication de votre image... :
 
-## En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest)
+### En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest))
 
 - oc project mon_projet
 - oc start-build bc/shiny-img
 
-## Via la console Web
+### Via la console Web
 
 - Allez sur la console de PLMShift, [sélectionnez votre projet](https://plmshift.math.cnrs.fr/console/projects)
 - Onglet Builds->Builds, cliquez sur **shiny-img**
@@ -39,7 +39,7 @@ ssh-keygen -C "openshift-source-builder/shiny@plmlab" -f shiny-at-plmlab -N ''
 ```
 - Ajoutez la **clé publique** (contenu du fichier shiny-at-plmlab.pub) dans les préférences du dépôt mon_depot/shiny-custom : **Settings->Repository->Deploy Keys**
 
-## En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest))
+### En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest))
 - Ajout de la **clé privé** (contenu du fichier shiny-at-plmlab) dans PLMShift :
 ```
 oc project mon_projet
@@ -49,7 +49,7 @@ oc start-build bc/shiny-img
 ```
 La dernière commande ```oc start-build bc/shiny-img``` permet de relancer la fabrication de votre image, car celle-ci a échoué (car la clé SSH n'était pas encore déployée)
 
-## Via la console Web
+### Via la console Web
 
 - Allez sur la console de PLMShift, [sélectionnez votre projet](https://plmshift.math.cnrs.fr/console/projects)
 - Onglet Resources->Secrets->Create Secret
