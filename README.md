@@ -4,7 +4,7 @@
   - git clone plmlab.math.cnrs.fr/plmshift/shiny-custom.git
   - ou bien en cliquant "Fork" sur la page d'accueil de ce dépôt
 - Dans le dossier ShinyApps, éditez vos applications Shiny
-- Connectez-vous sur https://plmshift.math.cnrs.fr, créez une applications Shiny R depuis le catalogue
+- Connectez-vous sur https://plmshift.math.cnrs.fr, créez une applications Shiny R depuis le catalogue (en choisissant **Shiny R Application Server**)
 - Renseignez l'URL de votre dépôt shiny-custom
   - si votre dépôt est public, l'URL sera de la forme : https://plmlab.math.cnrs.fr/votre_groupe/shiny-custom.git
   - si vous souhaitez un dépôt privé, l'URL sera de la forme : [git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git](git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git)
