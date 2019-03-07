@@ -48,7 +48,8 @@ cf: https://docs.openshift.com/container-platform/3.11/dev_guide/builds/build_in
 ```
 ssh-keygen -C "openshift-source-builder/shiny@plmlab" -f shiny-at-plmlab -N ''
 ```
-- Ajoutez la **clé publique** (contenu du fichier shiny-at-plmlab.pub) dans les préférences du dépôt mon_depot/shiny-custom : **Settings->Repository->Deploy Keys** (on pourra copier la clé publique dans le presse paier à l'aide de la commande suivante : `pbcopy < shiny-at-plmlab.pub`)
+- Ajoutez la **clé publique** (contenu du fichier shiny-at-plmlab.pub) dans les préférences du dépôt mon_depot/shiny-custom : **Settings->Repository->Deploy Keys** 
+(il est possible de copier la clé publique dans le presse papier à l'aide de la commande suivante : `pbcopy < shiny-at-plmlab.pub`)
 
 ### En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest))
 - Commencez par s'identifier dans oc si ce n'est pas déjà le cas (à l'aide de "Copy Login Command" - voir plus haut) :
