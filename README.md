@@ -10,7 +10,7 @@
   - si vous souhaitez un dépôt privé, l'URL sera de la forme : [git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git](git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git)
   - dans le cas d'un dépôt privé, vous devez utiliser une "clé SSH de déploiement" (voir ci-dessous) 
 - Patientez et ensuite connectez-vous sur l'URL de votre déploiement
-- Le dossier /opt/app-root/src est un volume persistant contenant :
+- Le dossier `/opt/app-root/src` est le point de montage d'un volume persistant contenant :
   - le dossier `ShinyApps` : votre application 
   - le dossier `R` vos packages supplémentaires (voir ci-dessous)
 
