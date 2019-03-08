@@ -55,7 +55,7 @@ sh-4.2$ R
 > Ctrl D
 ```
 #### via l'application :
-- au début du fichier `server.R` ajoutez les lignes suivantes :
+Au début du fichier `server.R` ajoutez les lignes suivantes :
 ```
 list.of.packages <- c("package1","package2")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
