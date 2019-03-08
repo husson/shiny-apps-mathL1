@@ -10,10 +10,13 @@
   - si vous souhaitez un dépôt privé, l'URL sera de la forme : [git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git](git@plmlab.math.cnrs.fr:votre_groupe/shiny-custom.git)
   - dans le cas d'un dépôt privé, vous devez utiliser une "clé SSH de déploiement" (voir ci-dessous) 
 - Patientez et ensuite connectez-vous sur l'URL de votre déploiement
+- Le dossier /opt/app-root/src est un volume persistant contenant :
+  - le dossier `ShinyApps` : votre application 
+  - le dossier `R` vos packages supplémentaires (voir ci-dessous)
 
 # Cycle de vie de votre application
 
-- Editez les fichiers dans le dossier ShinyApps de votre dépôt shiny-custom, mettez à jour (git push) le dépôt git
+- Editez les fichiers dans le dossier `ShinyApps` de votre dépôt shiny-custom, mettez à jour (git push) le dépôt git
 - Relancez la fabrication de votre image... :
 
 ### En ligne de commande (avec la commande [oc](https://github.com/openshift/origin/releases/latest) - outil à installer)
@@ -36,7 +39,28 @@ oc start-build bc/shiny-img
 - Onglet Builds->Builds, cliquez sur **shiny-img**
 - Cliquez sur **Start Build**
 
+### Installation de packages R supplémentaires
 
+L'installation de packages se fera dans le dossier `/opt/app-root/src/R`. Pour cela deux méthodes :
+
+#### en ligne de commande : 
+```
+oc get pods
+oc rsh shiny-2-asce44 (selon ce que donne oc get pods)
+```
+au prompt du Shell :
+```
+sh-4.2$ R
+> install.packages('mon_package')
+> Ctrl D
+```
+#### via l'application :
+- au début du fichier `server.R` ajoutez les lignes suivantes :
+```
+list.of.packages <- c("package1","package2")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
 
 # Récupération depuis PLMShift de votre dépôt privé, via une clé SSH de déploiement
 
