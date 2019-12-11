@@ -41,9 +41,19 @@ oc start-build bc/shiny-img
 
 ### Installation de packages R supplémentaires
 
-L'installation de packages se fera dans le dossier `/opt/app-root/src/R`. Pour cela deux méthodes :
+L'installation de packages se fera dans le dossier `/opt/app-root/src/R`.
 
-#### en ligne de commande : 
+Il vous suffit de créer un fichier nommé `packages.r` à la racine de votre dépôt contenant les packages à installer (un nom par ligne), comme par exemple :
+
+```
+shinydashboard
+ggplot2
+dplyr
+```
+
+Vous pouvez aussi installer des packages en live. Ce n'est pas recommandé car la compilation peut ne pas aboutir si les processus dépassent la mémoire allouée au Pod :
+
+connectez-vous au Pod :
 ```
 oc get pods
 oc rsh shiny-2-asce44 (selon ce que donne oc get pods)
@@ -53,13 +63,6 @@ au prompt du Shell :
 sh-4.2$ R
 > install.packages('mon_package')
 > Ctrl D
-```
-#### via l'application :
-Au début du fichier `server.R` ajoutez les lignes suivantes :
-```
-list.of.packages <- c("package1","package2")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
 ```
 
 # Récupération depuis PLMShift de votre dépôt privé, via une clé SSH de déploiement
