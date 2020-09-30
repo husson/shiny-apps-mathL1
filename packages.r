@@ -1,2 +1,7 @@
 shinydashboard
 ggplot2
+tidyverse
+rmarkdown
+httr
+shinydashboard
+leaflet
