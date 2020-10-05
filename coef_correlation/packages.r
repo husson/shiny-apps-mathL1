@@ -3,7 +3,4 @@ ggplot2
 tidyverse
 rmarkdown
 httr
-shinydashboard
-leaflet
 mvtnorm
-leaflet
