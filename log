@@ -1,5 +1,0 @@
-for app in `cat apps`
-do
-echo "${app}"
-done
-
