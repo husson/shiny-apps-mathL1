@@ -11,19 +11,30 @@
 - [Loi uniforme](https://loi-uniforme.apps.math.cnrs.fr)
 - [Vec gaussiens](https://vec-gaussiens.apps.math.cnrs.fr)
 
-- Executez les commandes suivantes (où mon projet sera à remplacer par le nom de votre projet au sein duquel se trouve votre appli shiny):
-```
+## Commandes openshift pour mémoire
+
+### Création du projet 
+
+```bash
+oc new-project irmar
 oc project irmar
 ```
 
-```
-oc new-project shiny-irmar
-oc process --parameters shiny-centos7 -n openshift
+### Options du template shiny-centos7
 
+```bash
+oc process --parameters shiny-centos7 -n openshift
+```
+
+### Création des applications
+
+```bash
 for app in coef-correlation loi-binomiale loi-exponentielle loi-fisher loi-khi2 loi-normale loi-poisson loi-student loi-uniforme vec-gaussiens
 do
 oc new-app shiny-centos7 \
+    --context-dir=${app} \
     -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git \
     -p APPLICATION_NAME=${app} \
-    -p BUILD_MEMORY_REQUEST=1Gi
+    -p BUILD_MEMORY_REQUEST=1Gi \ 
 done
+```
