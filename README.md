@@ -22,9 +22,8 @@ oc process --parameters shiny-centos7 -n openshift
 
 for app in coef-correlation loi-binomiale loi-exponentielle loi-fisher loi-khi2 loi-normale loi-poisson loi-student loi-uniforme vec-gaussiens
 do
-# oc new-app shiny-centos7 \
-#     -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git \
-#     -p APPLICATION_NAME=${app} \
-#     -p SOURCE_REPOSITORY_TAG=${app} \
-#     -p BUILD_MEMORY_REQUEST=1Gi
+oc new-app shiny-centos7 \
+    -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git \
+    -p APPLICATION_NAME=${app} \
+    -p BUILD_MEMORY_REQUEST=1Gi
 done
