@@ -19,3 +19,8 @@ oc new-app shiny-centos7 -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/na
 oc new-app shiny-centos7 -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git -p SOURCE_REPOSITORY_TAG=loi_student   -p APPLICATION_NAME=loi-studen -p BUILD_MEMORY_REQUEST=1Gi
 oc new-app shiny-centos7 -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git -p SOURCE_REPOSITORY_TAG=loi_uniforme  -p APPLICATION_NAME=loi-uniform -p BUILD_MEMORY_REQUEST=1Gi
 oc new-app shiny-centos7 -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git -p SOURCE_REPOSITORY_TAG=vec_gaussiens -p APPLICATION_NAME=vec-gaussien -p BUILD_MEMORY_REQUEST=1Gi
+for app in `cat apps`
+do
+echo "${app}"
+done
+
