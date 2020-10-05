@@ -7,7 +7,6 @@ pages:
     - docker
   script:
     - mkdir .public
-    - pip install pandoc
     - pandoc README.md -o index.html
     - cp -r index.html .public
     - mv .public public
