@@ -8,7 +8,7 @@ pages:
   script:
     - mkdir .public
     - pandoc -s -c pandoc.css README.md -o index.html
-    - cp -r index.html .public
+    - cp -r pandoc.css index.html .public
     - mv .public public
   artifacts:
     paths:
