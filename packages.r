@@ -5,3 +5,5 @@ rmarkdown
 httr
 shinydashboard
 leaflet
+mvtnorm
+leaflet

@@ -29,8 +29,11 @@ où mon_token sera une suite de caractère à ne pas divulguée (permettant de o
 
 - Executez les commandes suivantes (où mon projet sera à remplacer par le nom de votre projet au sein duquel se trouve votre appli shiny):
 ```
-oc project mon_projet
-oc start-build bc/shiny-img
+oc  project irmar
+oc new-project shiny-irmar
+oc process --parameters shiny-centos7 -n openshift
+oc new-app shiny-centos7 -p SOURCE_REPOSITORY_URL=https://plmlab.math.cnrs.fr/navaro/shiny-custom.git
+oc get route
 ```
 
 ### Via la console Web
