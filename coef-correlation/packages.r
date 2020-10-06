@@ -1,6 +1,4 @@
-shinydashboard
+shiny
+MASS
 ggplot2
-tidyverse
-rmarkdown
-httr
-mvtnorm
+

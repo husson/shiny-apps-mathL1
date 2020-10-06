@@ -1,6 +1,6 @@
+shiny
 shinydashboard
+shinyjs
+shinyBS
 ggplot2
-tidyverse
-rmarkdown
-httr
-mvtnorm
+stringr
