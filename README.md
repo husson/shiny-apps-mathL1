@@ -3,13 +3,13 @@
 - [Coefficient de corrélation](https://coef-correlation-irmar.apps.math.cnrs.fr)
 - [Loi binomiale](https://loi-binomiale-irmar.apps.math.cnrs.fr)
 - [Loi exponentielle](https://loi-exponentielle-irmar.apps.math.cnrs.fr)
-- [Loi de Fisher](https://loi-fisher.apps.math.cnrs.fr)
-- [Loi du Khi2](https://loi-khi2.apps.math.cnrs.fr)
-- [Loi normale](https://loi-normale.apps.math.cnrs.fr)
-- [Loi de Poisson](https://loi-poisson.apps.math.cnrs.fr)
-- [Loi student](https://loi-student.apps.math.cnrs.fr)
-- [Loi uniforme](https://loi-uniforme.apps.math.cnrs.fr)
-- [Vec gaussiens](https://vec-gaussiens.apps.math.cnrs.fr)
+- [Loi de Fisher](https://loi-fisher-irmar.apps.math.cnrs.fr)
+- [Loi du Khi2](https://loi-khi2-irmar.apps.math.cnrs.fr)
+- [Loi normale](https://loi-normale-irmar.apps.math.cnrs.fr)
+- [Loi de Poisson](https://loi-poisson-irmar.apps.math.cnrs.fr)
+- [Loi student](https://loi-student-irmar.apps.math.cnrs.fr)
+- [Loi uniforme](https://loi-uniforme-irmar.apps.math.cnrs.fr)
+- [Vec gaussiens](https://vec-gaussiens-irmar.apps.math.cnrs.fr)
 
 ## Commandes openshift pour mémoire
 
