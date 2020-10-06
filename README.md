@@ -9,7 +9,7 @@
 - [Loi de Poisson](https://loi-poisson-irmar.apps.math.cnrs.fr)
 - [Loi student](https://loi-student-irmar.apps.math.cnrs.fr)
 - [Loi uniforme](https://loi-uniforme-irmar.apps.math.cnrs.fr)
-- [Vec gaussiens](https://vec-gaussiens-irmar.apps.math.cnrs.fr)
+- [Vecteurs gaussiens](https://vec-gaussiens-irmar.apps.math.cnrs.fr)
 
 ## Commandes openshift pour mémoire
 
