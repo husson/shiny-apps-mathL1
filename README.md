@@ -2,7 +2,7 @@
 
 - Coefficient de corrélation [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/coef-correlation/ShinyApps/)
 - Loi binomiale [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-binomiale/ShinyApps/)
-- Loi exponentielle ![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-exponentielle/ShinyApps/)
+- Loi exponentielle [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-exponentielle/ShinyApps/)
 - Loi de Fisher [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-fisher/ShinyApps/)
 - Loi du Khi2 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-khi2/ShinyApps/)
 - Loi normale [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/pnavaro/shiny-apps-mathL1/main?urlpath=shiny/loi-normale/ShinyApps/)
