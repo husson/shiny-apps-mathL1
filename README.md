@@ -1,6 +1,4 @@
-# shiny-apps-mathL1
-Applications shiny pour les math en L1
-# Applications pédagogiques ShinyR 
+# Applications shiny pour les math en L1
 
 - [Coefficient de corrélation](https://coef-correlation-irmar.apps.math.cnrs.fr)
 - [Loi binomiale](https://loi-binomiale-irmar.apps.math.cnrs.fr)
