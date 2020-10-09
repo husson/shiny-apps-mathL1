@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=3.6
+  - r-shiny
+  - r-mass
+  - r-ggplot2
+  - r-shinydashboard
+  - r-shinyjs
+  - r-shinybs
+  - r-stringr

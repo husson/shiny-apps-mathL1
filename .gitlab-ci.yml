@@ -1,0 +1,17 @@
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
+pages:
+  image: pnavaro/pandoc
+  stage: deploy
+  tags:
+    - docker
+  script:
+    - mkdir .public
+    - pandoc -s -c pandoc.css plmshift.md -o index.html
+    - cp -r pandoc.css index.html .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
